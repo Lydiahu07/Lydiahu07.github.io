@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Portfolio – Projects</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #0a0a23;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 4rem;
+      border-bottom: 1px solid #f2f3f7;
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #3b3bf1;
+    }
+
+    .btn-primary {
+      background-color: #3b3bf1;
+      color: white;
+      padding: 0.5rem 1.3rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #2323e0;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-top: 4rem;
+      color: #0a0a23;
+      letter-spacing: 0.5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 3rem auto 6rem;
+      padding: 0 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      padding: 2rem 1.8rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:nth-child(4) { animation-delay: 0.8s; }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    }
+
+    .illustration {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .illustration {
+      transform: scale(1.05);
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: #787a9f;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #111;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      max-width: 90%;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-bottom: 4rem;
+      text-decoration: none;
+      color: #3b3bf1;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="#" class="btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">Featured Projects</h2>
+  <section class="projects">
+    <div class="card">
+      <svg class="illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="95" fill="#EAF0FF" stroke="#3B3BF1" stroke-width="4"/>
+        <path d="M70 110 Q100 70 130 110" fill="none" stroke="#FFD56A" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="100" cy="90" r="10" fill="#3B3BF1"/>
+      </svg>
+      <p class="meta">🟦 Infrastructure • 2025</p>
+      <h3>SoundAI Router — Unified Gateway</h3>
+      <p>Voice model API router enabling automatic cost routing, latency monitoring, and fallback across multiple AI providers.</p>
+    </div>
+
+    <div class="card">
+      <svg class="illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <rect x="30" y="40" width="140" height="120" rx="12" fill="#FFF8E1" stroke="#FFD56A" stroke-width="3"/>
+        <circle cx="70" cy="100" r="18" fill="#3B3BF1" opacity="0.85"/>
+        <rect x="100" y="85" width="50" height="8" fill="#3B3BF1"/>
+        <rect x="100" y="105" width="35" height="8" fill="#3B3BF1" opacity="0.6"/>
+      </svg>
+      <p class="meta">🟪 Voice AI • 2025</p>
+      <h3>VocalText — Emotional Transcription</h3>
+      <p>AI transcription tool with tone detection and intelligent summarization, built for creators and meetings.</p>
+    </div>
+
+    <div class="card">
+      <svg class="illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <rect x="20" y="60" width="160" height="80" rx="10" fill="#EAF0FF" stroke="#3B3BF1" stroke-width="3"/>
+        <circle cx="60" cy="100" r="10" fill="#FFD56A"/>
+        <circle cx="100" cy="100" r="10" fill="#FFD56A"/>
+        <circle cx="140" cy="100" r="10" fill="#FFD56A"/>
+      </svg>
+      <p class="meta">🟨 Generative UX • 2024</p>
+      <h3>Wispr Flow — Voice Mindfulness</h3>
+      <p>Generative journaling app turning voice reflections into mood-based insights and personalized soundscapes.</p>
+    </div>
+
+    <div class="card">
+      <svg class="illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <rect x="40" y="60" width="120" height="80" rx="10" fill="#EAF0FF" stroke="#3B3BF1" stroke-width="3"/>
+        <path d="M60 110 Q100 70 140 110" fill="none" stroke="#FFD56A" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="100" cy="90" r="8" fill="#3B3BF1"/>
+      </svg>
+      <p class="meta">🟩 Sleep AI • 2025</p>
+      <h3>AI Sleep Sound — Personalized Companion</h3>
+      <p>An adaptive sleep audio system combining brainwave analysis and personalized soundscapes for better rest and relaxation.</p>
+    </div>
+  </section>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</body>
+</html>
