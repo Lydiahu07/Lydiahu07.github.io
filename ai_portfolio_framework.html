@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundAI Portfolio – Home</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #0a0a23;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 4rem;
+      border-bottom: 1px solid #f2f3f7;
+    }
+    header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #3b3bf1;
+    }
+    .btn-primary {
+      background-color: #3b3bf1;
+      color: white;
+      padding: 0.5rem 1.3rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+    .btn-primary:hover {
+      background-color: #2323e0;
+    }
+
+    /* Intro Section */
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+      padding: 6rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .intro img {
+      width: 320px;
+      height: auto;
+      border-radius: 1.5rem;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .intro-text {
+      max-width: 520px;
+    }
+    .intro-text h2 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .intro-text h2 span {
+      color: #3b3bf1;
+    }
+    .intro-text p.subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+    }
+    .intro-text p.detail {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .intro-btns {
+      display: flex;
+      gap: 1rem;
+    }
+    .intro-btns a {
+      text-decoration: none;
+      border-radius: 2rem;
+      padding: 0.6rem 1.5rem;
+      font-weight: 500;
+    }
+    .intro-btns .primary {
+      background-color: #3b3bf1;
+      color: white;
+    }
+    .intro-btns .secondary {
+      border: 1px solid #3b3bf1;
+      color: #3b3bf1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SoundAI Portfolio</h1>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro" id="about">
+    <img src="https://cdn.dribbble.com/userupload/13082543/file/original-154a5a51c77e0836671ee090c0e2463a.png?resize=1200x900" alt="profile illustration">
+    <div class="intro-text">
+      <h2>Hi, I’m <span>Your Name</span> 👋</h2>
+      <p class="subtitle">AI Product Manager · Voice & Generative Systems</p>
+      <p class="detail">I build human-centered AI products that listen, understand, and respond with empathy. With backgrounds in neuroscience and informatics, I bridge cognitive science and product strategy to design meaningful AI experiences.</p>
+      <div class="intro-btns">
+        <a href="projects.html" class="primary">View Projects</a>
+        <a href="#contact" class="secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
